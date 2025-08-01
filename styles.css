@@ -1,0 +1,492 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+.allnav {
+    position: fixed;
+    top: 0;        
+    left: 0;        
+    width: 100%;    
+    z-index: 1000;
+}
+
+.topbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f28c38; 
+    padding: 0px 10px;
+    color: white;
+}
+
+.social-icons {
+    display: flex;
+    gap: 25px;
+    padding: 0 30px;
+}
+
+.social-icons a {
+    color: white;
+    font-size: 15px;
+    text-decoration: none;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li a {
+    color: white;
+    text-decoration: none;
+    font-size: 10px;
+    text-transform: uppercase;
+}
+
+.nav-links li a:hover {
+    color: #333;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.logo {
+    width: 120px;
+    height: auto;
+    object-fit: contain;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    position: relative;
+    margin: 0 5px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #555;
+    font-size: 14px;
+    text-transform: uppercase;
+    padding: 10px 15px;
+    display: block;
+}
+
+nav ul li:hover > a {
+    color: #ffffff;
+    background-color: #f88c1c;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #ffffff;
+    min-width: 150px;
+    z-index: 1;
+    top: 100%;
+    left: 0;
+}
+
+.dropdown-content a {
+    color: #555;
+    padding: 12px 20px;
+    text-decoration: none;
+    display: block;
+    text-transform: uppercase;
+}
+
+.dropdown-content a:hover {
+    background-color: #f5f5f5;
+    color: #f88c1c;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropdown-content {
+    opacity: 1;
+    transform: translateY(0);
+}
+.hero {
+    position: relative;
+    text-align: center;
+    height: 600px;
+    overflow: hidden;
+}
+
+.slideshow-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0; 
+    animation: slideShow 9s infinite; 
+}
+
+.slide img {
+    width: 100%;
+    height: 600px; 
+    object-fit: cover;
+}
+
+@keyframes slideShow {
+    0% { opacity: 0; }
+    10% { opacity: 1; } 
+    33.33% { opacity: 1; } 
+    43.33% { opacity: 0; } 
+    100% { opacity: 0; }
+}
+
+.slide:nth-child(1) {
+    animation-delay: 0s;
+}
+
+.slide:nth-child(2) {
+    animation-delay: 3s;
+}
+
+.slide:nth-child(3) {
+    animation-delay: 6s;
+}
+
+.booking-form {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+}
+
+.booking-form h3 {
+    margin-bottom: 10px;
+    color: #f88c1c;
+}
+
+.booking-form form {
+    display: flex;
+    gap: 10px;
+}
+
+.booking-form input,
+.booking-form select {
+    padding: 5px;
+}
+
+.booking-form button {
+    padding: 5px 10px;
+    width: 100px;
+    background-color: #f88c1c;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+}
+
+#confirmation-message {
+    display: none;
+    margin-top: 16px;
+    padding: 15px;
+    background-color: #f88c1c;
+    color: white;
+    border-radius: 4px;
+}
+
+#error-message {
+    display: none;
+    margin-top: 16px;
+    padding: 15px;
+    background-color: #f8d7da;
+    color: #721c24;
+    border-radius: 4px;
+}
+
+.welcome {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.welcome h1 {
+    color: #f88c1c;
+    margin: 10px 0 20px 0;
+    font-size: 30px;
+}
+
+.welcome p {
+    max-width: 800px;
+    margin: 0 auto;
+    color: #666;
+}
+
+.hotels {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 50px 20px;
+}
+
+.hotel-card {
+    width: 100%;
+    text-align: center;
+}
+
+.hotel-card img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.hotel-card h4 {
+    margin: 10px 0;
+}
+
+.hotel-card p {
+    color: #666;
+    margin-bottom: 10px;
+    
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 20px;
+    background-color: #f88c1c;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 3px;
+    align-items: center;
+}
+
+.special-offers {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.special-offers h1 {
+    color: #f88c1c;
+    margin-bottom: 30px;
+    font-size: 30px;
+}
+
+.offers-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.offer-card {
+    width: 100%;
+}
+
+.offer-card img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+
+}
+
+.explore {
+    display: flex;
+    align-items: center;
+    padding: 50px 50px;
+    background-color: #fff;
+}
+
+.explore img {
+    width: 100%;
+    max-width: 700px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.explore-content {
+    padding: 20px;
+}
+
+.explore-content h1 {
+    color: #f88c1c;
+    margin-bottom: 10px;
+    font-size: 30px;
+}
+
+.explore-content p {
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.explore-content select {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px 20px;
+    background-color: #f9e5bc;
+}
+
+.footer-section h3 {
+    margin-bottom: 10px;
+}
+
+.footer-section ul {
+    list-style: none;
+}
+
+.footer-section ul li {
+    margin-bottom: 5px;
+}
+
+.footer-section ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+.footer-section ul li a:hover {
+    color: black;
+}
+
+.footer-section input {
+    padding: 5px;
+    margin-bottom: 10px;
+    width: 200px;
+}
+
+.footer-section button {
+    padding: 5px 15px;
+    background-color: #f88c1c;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+}
+
+.footer-section > p {
+    margin-bottom: 15px;
+}
+
+.footer-socials {
+    display: flex;
+    gap: 20px;
+}
+
+.footer-socials a {
+    color: black;
+    font-size: 30px;
+    text-decoration: none;
+}
+
+
+.copyright {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+}
+
+.content {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+.content h1 {
+    font-size: 32px;
+    margin-bottom: 16px;
+}
+
+.content h2 {
+    font-size: 28px;
+    margin: 16px 0 16px 0;
+}
+
+.content h3 {
+    font-size: 24px;
+    margin: 16px 0 16px 0;
+}
+
+.content ul {
+    margin-bottom: 16px;
+}
+
+.content ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.content ul li {
+    margin-bottom: 8px;
+}
+
+.contact-form {
+    background-color: white;
+    padding: 50px 200px;
+    border-radius: 8px;
+    border: none;
+}
+
+.contact-form h1 {
+    margin-bottom: 16px;
+    text-align: center;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 8px;
+}
+
+.contact-form textarea {
+    height: 200px;
+}
+
+.contact-form button {
+    background-color: #f88c1c;
+    color: white;
+    padding: 10px;
+    width: 100px; 
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    text-transform: uppercase;
+    align-self: center; 
+}
+
+.contact-form button:hover {
+    background-color: #b36a1b;
+}

@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="images/download.jpeg">
+    <title>Citrus Hotels</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <section class="allnav">
+        <nav class="topbar">
+            <div class="social-icons">
+                <a href="https://web.facebook.com/citrus.srilanka/?_rdc=1&_rdr#"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://x.com/CitrusHotelsSL?lang=en"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com/citrus.hotels/"><i class="fab fa-instagram"></i></a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="about us.html">ABOUT US</a></li>
+                <li><a href="careers.html">CAREERS</a></li>
+                <li><a href="contact.html">CONTACT US</a></li>
+                <li><a href="#">ANNUAL REPORT</a></li>
+                <li><a href="#">#HAPPINESSMOMENTS</a></li>
+            </ul>
+        </nav>
+    
+        <header>
+            <a href="index.html"><img src="images/logo.png" alt="Citrus Logo" class="logo"></a>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li class="dropdown">
+                        <a href="#">Accommodations</a>
+                        <div class="dropdown-content">
+                            <a href="#">Waskaduwa</a>
+                            <a href="#">Hikkaduwa</a>
+                            <a href="#">The Steuart</a>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#">Dining</a>
+                        <div class="dropdown-content">
+                            <a href="#">Waskaduwa</a>
+                            <a href="#">Hikkaduwa</a>
+                            <a href="#">The Steuart</a>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#">Spas</a>
+                        <div class="dropdown-content">
+                            <a href="#">Waskaduwa</a>
+                            <a href="#">Hikkaduwa</a>
+                            <a href="#">The Steuart</a>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#">Weddings</a>
+                        <div class="dropdown-content">
+                            <a href="#">Waskaduwa</a>
+                            <a href="#">Hikkaduwa</a>
+                            <a href="#">The Steuart</a>
+                        </div>
+                    </li>
+                    <li class="dropdown"><a href="#">Events</a></li>
+                </ul>
+            </nav>
+        </header>
+    </section>
+    
+
+    <section class="hero">
+        <div class="slideshow-container">
+          <div class="slide">
+            <img src="images/slide 1.jpg" alt="Hotel Pool">
+          </div>
+          <div class="slide">
+            <img src="images/slide 2.jpg" alt="Waskaduwa">
+          </div>
+          <div class="slide">
+            <img src="images/slide 3.jpg" alt="Hikkaduwa">
+          </div>
+        </div>
+        <div class="booking-form">
+            <h3>BOOK YOUR STAY</h3>
+            <form id="booking-form">
+                <select id="hotel" name="hotel" required>
+                    <option value="" disabled selected>Select a Hotel</option>
+                    <option value="Citrus Hikkaduwa">Citrus Hikkaduwa</option>
+                    <option value="Citrus Waskaduwa">Citrus Waskaduwa</option>
+                    <option value="The Steuart By Citrus">The Steuart By Citrus</option>
+                </select>
+                <input type="date" id="check-in" name="check-in" value="2025-04-05" required>
+                <input type="date" id="check-out" name="check-out" value="2025-04-06" required>
+                <select id="nationality" name="nationality" required>
+                    <option value="" disabled selected>Nationality</option>
+                    <option value="Sri Lankan">Sri Lankan</option>
+                    <option value="Foreign">Foreign</option>
+                </select>
+                <input type="text" id="promo-code" name="promo-code" placeholder="Promo Code">
+                <button type="submit" id="book-now">BOOK NOW</button>
+            </form>
+            <div id="confirmation-message"></div>
+            <div id="error-message"></div>
+        </div>
+    </section>
+
+    <section class="welcome">
+        <h3>YOUR JOURNEY STARTS HERE</h3>
+        <h1>WELCOME TO CITRUS</h1>
+        <p>Experience a chain of distinctive hotels and resorts that are handpicked to bring the best warmth of true Sri Lankan hospitality with luxurious amenities and exclusive extravagances at Citrus Resorts and Hotels in Sri Lanka. Take your #HappinessMoments in Citrus back.</p>
+    </section>
+
+
+    <section class="hotels">
+        <div class="hotel-card">
+            <img src="images/2.jpg" alt="Hotel 1">
+            <h4>WASGAMUWA</h4>
+            <p>Overlooking the magic blue of the Indian Ocean, Citrus Waskaduwa embodies the true essence of luxury for your Sri Lankan vacation. Sun-soaked tranquility and breathtaking views, outstanding cuisine, and luxury accommodation.</p>
+            <a href="#" class="btn">VIEW HOTEL</a>
+        </div>
+        <div class="hotel-card">
+            <img src="images/3.jpg" alt="Hotel 2">
+            <h4>HIKKADUWA</h4>
+            <p>Discover the eclectic paradise of Hikkaduwa, explore the surrounding beaches and countryside and the nightlife as you stay in idyllic bliss amidst the sun-kissed beaches of Southern Sri Lanka.</p>
+            <a href="#" class="btn">VIEW HOTEL</a>
+        </div>
+        <div class="hotel-card">
+            <img src="images/4.jpg" alt="Hotel 3">
+            <h4>THE STEUART</h4>
+            <p>The oldest hotel in Colombo, a colonial building of Scottish heritage that housed the quarters George Steuart & Co. Ltd, the oldest mercantile institution, was transformed into a boutique hotel in July 2015.</p>
+            <a href="#" class="btn">VIEW HOTEL</a>
+        </div>
+    </section>
+
+    <section class="special-offers">
+        <h1>SPECIAL OFFERS</h1>
+        <div class="offers-container">
+            <div class="offer-card">
+                <a href="#"><img src="images/5.jpg" alt="Offer 1"></a>
+            </div>
+            <div class="offer-card">
+                <a href="#"><img src="images/6.jpg" alt="Offer 2"></a>
+            </div>
+            <div class="offer-card">
+                <a href="#"><img src="images/7.jpg" alt="Offer 3"></a>
+            </div>
+        </div>
+    </section>
+
+    <section class="explore">
+        <img src="images/8.jpg" alt="Explore">
+        <div class="explore-content">
+            <h1>EXPLORE - DISCOVER</h1>
+            <p>Discover Sri Lanka with Citrus as we offer experiences in Waskaduwa, Hikkaduwa, and Colombo along the southern coast of the country and a region hostel in the heart of Colombo.</p>
+            <select>
+                <option selected>Select a Hotel</option>
+                <option value="Citrus Hikkaduwa">Citrus Hikkaduwa</option>
+                <option value="Citrus Waskaduwa">Citrus Waskaduwa</option>
+                <option value="The Steuart By Citurs">The Steuart By Citurs</option>
+            </select>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-section">
+            <h3>NEWSLETTER</h3>
+            <p>Receive our latest offers & packages directly to your inbox.</p>
+            <input type="email" placeholder="Enter your email">
+            <button>SIGN UP</button>
+        </div>
+        <div class="footer-section">
+            <h3>CITRUS HOTELS</h3>
+            <ul>
+                <li><a href="#">Waskaduwa</a></li>
+                <li><a href="#">Hikkaduwa</a></li>
+                <li><a href="#">The Steuart</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h3>CITRUS LEISURE PLC</h3>
+            <ul>
+                <li><a href="about us.html">About Us</a></li>
+                <li><a href="careers.html">Careers</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="#">Annual Report</a></li>
+                <li><a href="#">#HappinessMoments</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h3>FOLLOW US</h3>
+            <div class="footer-socials">
+                <a href="https://web.facebook.com/citrus.srilanka/?_rdc=1&_rdr#"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://x.com/CitrusHotelsSL?lang=en"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com/citrus.hotels/"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <div class="copyright">
+        <p> This is a website developed by Minuka De Silva for educational purposes. All rights to Citrus leisure PLC </p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
